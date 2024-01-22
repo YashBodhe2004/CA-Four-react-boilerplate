@@ -1,83 +1,64 @@
 body {
-    font-family: 'Anek Malayalam', sans-serif;
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 100vh;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .ContainerModified {
-    border: 3px solid rgb(224, 79, 30);
-    border-radius: 4px;
-    background-color: rgb(250, 195, 93);
-    padding: 40px;
-    height: 40vh;
-    width: 40vw;
-  }
-  
-  .Ambient {
-    color: rgb(74, 48, 0);
-    position: relative;
-    top: -49vh;
-    right: -40vw;
-    font-size: 15px;
-  }
-  
-  .h2Modified {
-    font-size: 20px;
-    margin-top: 0px;
-  }
-  
-  .h3Modified {
-    position: relative;
-    top: 5vh;
-    right: 0vw;
-  }
-  
-  .h4Modified {
-    position: relative;
-    top: 5vh;
-    right: -28vw;
-  }
-  
-  .appButton {
-    background-color: black;
-    color: rgb(227, 172, 116);
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid rgb(255, 0, 0);
-  }
-  
-  li {
-    padding: 4px;
-    border: 2px solid rgb(243, 223, 165);
-    border-radius: 5px;
-    margin-top: 5px;
-    list-style-type: none;
-    cursor: pointer;
-  }
-  
-  .Container2Modified {
-    padding: 0px;
-    height: 49vh;
-    width: 43vw;
-    color: rgb(100, 55, 10);
-    background-color: rgb(250, 195, 93);
-    padding: 5px;
-    border-radius: 4px;
-    border: 3px solid rgb(224, 79, 30);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .superTextModified {
-    font-size: 50px;
-    font-family: cursive;
-    letter-spacing: 3px;
-    margin-top: -10px;
-  }
+  font-family: 'Anek Malayalam', sans-serif;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0; /* Remove default margin */
+}
+
+.navbar {
+  background-color: rgba(240, 210, 154, 0.929);
+  padding: 10px;
+  text-align: left;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.ContainerModified {
+  border: 3px solid rgb(224, 79, 30);
+  border-radius: 4px;
+  background-color: rgb(237, 182, 190);
+  padding: 40px;
+  height: 40vh;
+  width: 40vw;
+  margin-top: 50px; /* Adjust margin to make space for the navbar */
+}
+
+.Ambient {
+  color: rgb(74, 48, 0);
+  position: relative;
+  top: -49vh;
+  right: -40vw;
+  font-size: 15px;
+}
+
+.h2Modified {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.h3Modified {
+  position: relative;
+  top: 5vh;
+  right: 0vw;
+}
+
+.h4Modified {
+  position: relative;
+  top: 5vh;
+  right: -28vw;
+}
+
+.appButton {
+  background-color: black;
+  color: rgb(227, 172, 116);
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid rgb(255, 0, 0);
+}
