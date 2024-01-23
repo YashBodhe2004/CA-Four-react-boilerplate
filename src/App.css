@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-  background-color: rgba(240, 210, 154, 0.929);
+  background-color: rgb(249, 202, 114);
   padding: 10px;
   text-align: left;
   color: white;
@@ -21,9 +21,9 @@ body {
 }
 
 .ContainerModified {
-  border: 3px solid rgb(224, 79, 30);
+  border: 3px solid rgb(245, 165, 138);
   border-radius: 4px;
-  background-color: rgb(237, 182, 190);
+  background-color: rgb(240, 149, 149);
   padding: 40px;
   height: 40vh;
   width: 40vw;
@@ -31,7 +31,7 @@ body {
 }
 
 .Ambient {
-  color: rgb(74, 48, 0);
+  color: rgb(27, 20, 6);
   position: relative;
   top: -49vh;
   right: -40vw;
@@ -61,4 +61,44 @@ body {
   padding: 5px;
   border-radius: 4px;
   border: 1px solid rgb(255, 0, 0);
+}
+
+.newButton:hover {
+  background-color: rgb(220, 89, 89);
+  transform: scale(1.1);
+}
+
+.appButton:hover {
+  transform: scale(1.3);
+}
+
+li {
+  padding: 4px;
+  border: 2px solid rgb(243, 223, 165);
+  border-radius: 5px;
+  margin-top: 5px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.Container2Modified {
+  padding: 0px;
+  height: 49vh;
+  width: 43vw;
+  color: rgb(44, 43, 43);
+  background-color: rgb(250, 195, 93);
+  padding: 5px;
+  border-radius: 4px;
+  border: 3px solid rgb(224, 79, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.superTextModified {
+  font-size: 50px;
+  font-family: cursive;
+  letter-spacing: 3px;
+  margin-top: -10px;
 }

@@ -3,11 +3,15 @@ import questionsData from '../questions';
 import ResultUpdated from './Result';
 
 
+
+
 export default function QuestionBoxModified({ questions, totalQuestions }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [correctAnswersCount, setCorrectAnswersCount] = useState(0);
   const [isHighlighted, setIsHighlighted] = useState(false);
   const { text, options } = questionsData[currentQuestionIndex];
+
+
 
 
   const handleAnswerUpdate = function (isCorrect) {
@@ -18,6 +22,8 @@ export default function QuestionBoxModified({ questions, totalQuestions }) {
   };
 
 
+
+
   let toggleHighlight = function () {
     if (isHighlighted === false) {
       setIsHighlighted((prev) => (prev = true));
@@ -25,15 +31,21 @@ export default function QuestionBoxModified({ questions, totalQuestions }) {
   };
 
 
+
+
   let removeHighlight = function () {
     if (isHighlighted === true) setIsHighlighted((prev) => (prev = false));
   };
+
+
 
 
   if (currentQuestionIndex === totalQuestions - 1) {
     return <ResultUpdated answerCount={correctAnswersCount} />;
   }
  
+
+
 
 
   return (
@@ -44,7 +56,7 @@ export default function QuestionBoxModified({ questions, totalQuestions }) {
       </h2>
       <ul>
         {options.map((item, i) => (
-          <li className='newButton' key={i} idd={item.id} onClick={() => handleAnswerUpdate(item.isCorrect)}>
+          <li key={i} idd={item.id} className='newButton' onClick={() => handleAnswerUpdate(item.isCorrect)}>
             {item.text}
           </li>
         ))}
@@ -58,3 +70,5 @@ export default function QuestionBoxModified({ questions, totalQuestions }) {
     </div>
   );
 }
+
+

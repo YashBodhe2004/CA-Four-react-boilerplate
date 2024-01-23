@@ -9,7 +9,7 @@ function AppModified() {
   const [currentTheme, setCurrentTheme] = useState('Dark');
 
   useEffect(() => {
-    document.body.style.backgroundColor = isDarkMode ? 'rgb(74, 48, 0)' : ' rgb(229 188 113)';
+    document.body.style.backgroundColor = isDarkMode ? ' black' : ' rgb(229 188 113)';
     document.body.style.color = isDarkMode ? 'black' : 'black';
   }, [isDarkMode]);
 
